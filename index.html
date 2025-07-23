@@ -3,37 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Jyotiba - AI Engineer </title>
+    <title>Abhishek Jyotiba - AI Engineer | Machine Learning & Deep Learning Expert</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Abhishek Jyotiba - AI Engineer specializing in Machine Learning, NLP, Computer Vision, and Agentic AI. Building intelligent systems that solve real-world problems with cutting-edge AI technologies.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, NLP, Computer Vision, Artificial Intelligence, Python, TensorFlow, PyTorch, Data Science">
+    <meta name="author" content="Abhishek Jyotiba">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek Jyotiba - AI Engineer | Machine Learning Expert">
+    <meta property="og:description" content="AI Engineer specializing in Machine Learning, NLP, Computer Vision, and Agentic AI workflows. View my AI projects and expertise.">
+    <meta property="og:url" content="https://abhishekjyotiba.com">
+    <meta property="og:site_name" content="Abhishek Jyotiba Portfolio">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AbhishekJyotiba">
+    <meta name="twitter:title" content="Abhishek Jyotiba - AI Engineer">
+    <meta name="twitter:description" content="AI Engineer specializing in Machine Learning, NLP, and Computer Vision">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abhishek Jyotiba",
+      "jobTitle": "AI Engineer",
+      "description": "AI Engineer specializing in Machine Learning, NLP, Computer Vision, and Agentic AI",
+      "url": "https://abhishekjyotiba.com",
+      "sameAs": [
+        "https://linkedin.com/in/abhishekjyotiba",
+        "https://github.com/abhijyotiba",
+        "https://x.com/AbhishekJyotiba"
+      ],
+      "knowsAbout": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Artificial Intelligence"]
+    }
+    </script>
+    
+    <!-- Google Analytics (replace YOUR_GA_ID with actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA_ID');
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Floating Interactive Objects -->
+    <div class="floating-objects">
+        <div class="floating-object ufo">🛸</div>
+        <div class="floating-object plane">✈️</div>
+        <div class="floating-object comet">☄️</div>
+        <div class="floating-object satellite">🛰️</div>
+        <div class="floating-object rocket">🚀</div>
+        <div class="floating-object balloon">🎈</div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="comic-nav">
+    <nav class="comic-nav" role="navigation" aria-label="Main Navigation">
         <div class="nav-content">
-            <div class="logo">Abhishek Jyotiba</div>
+            <div class="logo">AI Engineer</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" aria-label="About section">About</a></li>
+                <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+                <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+                <li><a href="#certifications" aria-label="Certifications section">Certifications</a></li>
+                <li><a href="#blogs" aria-label="Blogs section">Blogs</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
             </ul>
+            <div class="theme-toggle-container">
+                <span class="theme-label">Theme:</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle between light and dark themes" title="Switch between light and dark theme"></button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="banner">
         <div class="hero-content">
-            <h1 class="hero-title">AI Engineer</h1>
+            <h1 class="hero-title">ABHISHEK JYOTIBA</h1>
             <p class="hero-subtitle">Designing intelligent systems and machine learning solutions that solve real-world problems with cutting-edge AI technologies.</p>
             <div class="cta-section">
-                <a href="#projects" class="cta-button primary">View AI Projects</a>
-                <a href="#contact" class="cta-button">Let's Collaborate</a>
+                <a href="#projects" class="cta-button primary" aria-label="View my AI projects">View AI Projects</a>
+                <a href="#contact" class="cta-button" aria-label="Contact me for collaboration">Let's Collaborate</a>
             </div>
         </div>
-        <div class="hero-image">
-            <!-- AI/ML themed character illustration will go here -->
+        <div class="hero-cards-stack" role="img" aria-label="AI Engineer portfolio showcase">
+            <div class="hero-card card-1 active" data-index="0">
+                <div class="asymmetric-rect">
+                    <div class="image-container">
+                        <img src="asset/hero/black1.jpeg" alt="AI Project Showcase 1" class="hero-img bw-img">
+                        <img src="asset/hero/1.png" alt="AI Project Showcase 1 - Color" class="hero-img color-img">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card card-2" data-index="1">
+                <div class="asymmetric-rect">
+                    <div class="image-container">
+                        <img src="asset/hero/black2.jpeg" alt="AI Project Showcase 2" class="hero-img bw-img">
+                        <img src="asset/hero/2.png" alt="AI Project Showcase 2 - Color" class="hero-img color-img">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card card-3" data-index="2">
+                <div class="asymmetric-rect">
+                    <div class="image-container">
+                        <img src="asset/hero/black3.jpeg" alt="AI Skills Showcase" class="hero-img bw-img">
+                        <img src="asset/hero/3.png" alt="AI Skills Showcase - Color" class="hero-img color-img">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slider-dots">
+                <span class="hero-dot active" data-slide="0"></span>
+                <span class="hero-dot" data-slide="1"></span>
+                <span class="hero-dot" data-slide="2"></span>
+            </div>
         </div>
     </section>
 
@@ -42,12 +134,10 @@
         <h2 class="section-title">About Me</h2>
         <div class="speech-section">
             <div class="speech-bubble">
-                "Passionate AI Engineer with expertise in machine learning, NLP , Automation ,Genartive AI and Agentic AI workflows. I transform complex data into intelligent solutions that drive innovation and solve real-world challenges!"
+                "Passionate AI Engineer with expertise in machine learning, NLP, automation, generative AI and agentic AI workflows. I transform complex data into intelligent solutions that drive innovation and solve real-world challenges!"
             </div>
-            <div class="character-placeholder">
-                AI ENGINEER WITH<br>
-                NEURAL NETWORKS<br>
-                & DATA VISUALIZATIONS
+            <div class="character-image">
+                <img src="asset/profile/abhishek-profile.png" alt="Abhishek Jyotiba - AI Engineer" class="about-character-img">
             </div>
         </div>
     </section>
@@ -104,17 +194,17 @@
                     <h3 class="panel-title">AI Agents</h3>
                 </div>
                 <div class="panel-content">
-                    Image classification, object detection, facial recognition, and medical imaging analysis using state-of-the-art vision models.
+                    Autonomous AI agents, multi-agent systems, and agentic workflows using LangGraph, CrewAI, and custom agent frameworks for complex task automation.
                 </div>
             </div>
             <div class="comic-panel">
-                <div class="panel-accent purple"></div>
+                <div class="panel-accent orange"></div>
                 <div class="panel-header">
                     <div class="panel-icon">🔊</div>
                     <h3 class="panel-title">Speech Synthesis</h3>
                 </div>
                 <div class="panel-content">
-                    Image classification, object detection, facial recognition, and medical imaging analysis using state-of-the-art vision models.
+                    Text-to-speech systems, voice cloning, speech recognition, and audio processing using modern TTS models like Eleven Labs and Whisper.
                 </div>
             </div>            
         </div>
@@ -126,7 +216,7 @@
     <div class="projects-grid">
         <div class="project-card">
         <div class="project-image">
-            <img src="/mnt/data/7e655ec9-07bf-4041-a426-cc1b2e8269a2.png" alt="Technical Monitor" style="height:100%; width:auto;">
+            <img src="asset/skills/technical-monitor.png" alt="Technical Skills Monitor" style="height:100%; width:auto;">
         </div>
         <div class="project-content">
             <h3 class="project-title">Core Proficiencies</h3>
@@ -258,22 +348,18 @@
             <div class="slider-container">
                 <div class="slide active">
                     <div class="speech-section">
-                        <div class="character-placeholder">
-                            AI RESEARCH &<br>
-                            INNOVATION LAB<br>
-                            ILLUSTRATION
+                        <div class="character-image">
+                            <img src="asset/experience/tedx-leadership.jpeg" alt="TEDxSAKEC Leadership Experience" class="about-character-img">
                         </div>
                         <div class="speech-bubble">
-                            <strong>Sponsorship & Finance Lead, TEDxSAKEC (2024 –2025)</strong> Led sponsor outreach and audience strategy; helped achieve record attendance and brand engagement.
+                            <strong>Sponsorship & Finance Lead, TEDxSAKEC (2024–2025)</strong> Led sponsor outreach and audience strategy; helped achieve record attendance and brand engagement.
                         </div>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="speech-section">
-                        <div class="character-placeholder">
-                            CODE-OFF-DUTY &<br>
-                            COMPETITION<br>
-                            LEADERSHIP
+                        <div class="character-image">
+                            <img src="asset/experience/codeoffduty-leadership.jpeg" alt="Code Off Duty Competition Leadership" class="about-character-img">
                         </div>
                         <div class="speech-bubble">
                             <strong>Event Head, Code Off Duty (2023 –2024)</strong> Successfully led and organized a coding competition with strong participation and positive feedback.
@@ -299,27 +385,61 @@
         <h2 class="section-title">AI Insights & Blogs</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
-                <div class="project-image">BLOG POST PREVIEW 1</div>
+                <div class="project-image">
+                    <img src="asset/blogs/quantum-chips.jpg" alt="Quantum Chips Blog Post" class="blog-image">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Bits vs. Qubits: Why Quantum Chips Are the Future of AI and Beyond</h3>
                     <p class="panel-content">Quantum chips, powered by qubits and principles like superposition, are poised to drastically enhance AI, cryptography, and optimization tasks by outperforming classical chips in speed and parallelism—though they will complement, not replace, traditional systems for now.</p>
-                    <a href="#" class="cta-button" style="margin-top: 1rem; display: inline-block;">Read More</a>
+                    <a href="https://medium.com/@jyotibaabhishek/bits-vs-qubits-why-quantum-chips-are-the-future-of-ai-and-beyond" target="_blank" class="cta-button blog-read-btn" rel="noopener">Read on Medium</a>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <div class="project-image">BLOG POST PREVIEW 2</div>
+                <div class="project-image">
+                    <img src="asset/blogs/federated-learning.jpg" alt="Federated Learning Blog Post" class="blog-image">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Federated Learning</h3>
                     <p class="panel-content">Federated Learning enables collaborative machine learning across decentralized systems without sharing raw data, transforming data privacy and personalization in sectors like healthcare, finance, and smart devices.</p>
-                    <a href="#" class="cta-button" style="margin-top: 1rem; display: inline-block;">Read More</a>
+                    <a href="#" class="cta-button blog-read-btn">Read More</a>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <div class="project-image">BLOG POST PREVIEW 3</div>
+                <div class="project-image">
+                    <img src="asset/blogs/quantum-computing.jpg" alt="Quantum Computing Blog Post" class="blog-image">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">Quantum Computing: The Next Big Thing in Technology</h3>
                     <p class="panel-content">Quantum computing leverages qubits to process complex problems exponentially faster than classical systems, promising breakthroughs in fields such as medicine, cybersecurity, and AI, while still relying on hybrid use with traditional computers.</p>
-                    <a href="#" class="cta-button" style="margin-top: 1rem; display: inline-block;">Read More</a>
+                    <a href="#" class="cta-button blog-read-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="comic-section testimonials-section">
+        <h2 class="section-title testimonials-title">What People Say</h2>
+        <div class="projects-grid testimonials-grid">
+            <div class="project-card testimonial-card">
+                <div class="project-content testimonial-content">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Abhishek's AI expertise and innovative approach helped transform our data processing workflow. His technical skills combined with clear communication made the project a success."</p>
+                    <div class="testimonial-author testimonial-author-blue">- Project Collaborator</div>
+                </div>
+            </div>
+            <div class="project-card testimonial-card">
+                <div class="project-content testimonial-content">
+                    <div class="testimonial-icon">🎯</div>
+                    <p class="testimonial-text">"Outstanding leadership and technical execution in our TEDx event. Abhishek's strategic thinking and attention to detail exceeded expectations."</p>
+                    <div class="testimonial-author testimonial-author-green">- TEDxSAKEC Team</div>
+                </div>
+            </div>
+            <div class="project-card testimonial-card">
+                <div class="project-content testimonial-content">
+                    <div class="testimonial-icon">🚀</div>
+                    <p class="testimonial-text">"Brilliant problem-solving skills and deep understanding of AI technologies. Abhishek consistently delivers high-quality solutions."</p>
+                    <div class="testimonial-author testimonial-author-purple">- Development Team</div>
                 </div>
             </div>
         </div>
@@ -328,19 +448,68 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <h2 class="contact-title">Let's Build the Future with AI</h2>
-        <p style="margin-bottom: 2rem; font-size: 1.2rem;">Ready to collaborate on groundbreaking AI solutions?</p>
+        <p class="contact-subtitle">Ready to collaborate on groundbreaking AI solutions? Let's connect and create something amazing together!</p>
         <div class="contact-buttons">
-            <a href="mailto:jyotibaabhishek@gmail.com" class="contact-btn">Email Me</a>
-            <a href="https://linkedin.com/in/abhishekjyotiba" class="contact-btn">LinkedIn</a>
-            <a href="https://github.com/abhijyotiba" class="contact-btn">GitHub</a>
-            <a href="https://x.com/AbhishekJyotiba" class="contact-btn">Twitter</a>
-            <a href="https://www.doi.org/10.56726/IRJMETS68489" class="contact-btn">Research Papers</a>
+            <a href="mailto:jyotibaabhishek@gmail.com?subject=AI%20Collaboration%20Opportunity" class="contact-btn" aria-label="Send email to Abhishek">✉️ Email Me</a>
+            <a href="https://linkedin.com/in/abhishekjyotiba" target="_blank" class="contact-btn" aria-label="Connect on LinkedIn" rel="noopener">💼 LinkedIn</a>
+            <a href="https://github.com/abhijyotiba" target="_blank" class="contact-btn" aria-label="View GitHub profile" rel="noopener">💻 GitHub</a>
+            <a href="https://x.com/AbhishekJyotiba" target="_blank" class="contact-btn" aria-label="Follow on Twitter" rel="noopener">🐦 Twitter</a>
+            <a href="https://www.doi.org/10.56726/IRJMETS68489" target="_blank" class="contact-btn" aria-label="View research papers" rel="noopener">📄 Research Papers</a>
+        </div>
+        
+        <!-- Call-to-action for collaboration -->
+        <div class="collaboration-cta">
+            <h3 class="collaboration-title">🚀 Looking for AI Solutions?</h3>
+            <p class="collaboration-text">I'm available for freelance projects, AI consultations, and full-time opportunities. Let's discuss how we can leverage AI to solve your unique challenges!</p>
+            <a href="mailto:jyotibaabhishek@gmail.com?subject=AI%20Project%20Collaboration&body=Hi%20Abhishek,%0A%0AI'm%20interested%20in%20discussing%20an%20AI%20project%20with%20you.%0A%0AProject%20Details:%0A-%20Industry:%0A-%20Challenge:%0A-%20Timeline:%0A%0ALooking%20forward%20to%20your%20response!" class="cta-button primary collaboration-btn">🤝 Start a Project</a>
         </div>
     </section>
 
     
 
     <script>
+        // Performance monitoring (production ready)
+        if ('PerformanceObserver' in window) {
+            const perfObserver = new PerformanceObserver((list) => {
+                list.getEntries().forEach((entry) => {
+                    if (entry.entryType === 'navigation') {
+                        // Performance data available for analytics
+                        // console.log('Page load time:', entry.loadEventEnd - entry.loadEventStart);
+                    }
+                });
+            });
+            perfObserver.observe({ entryTypes: ['navigation'] });
+        }
+
+        // Error tracking (production ready)
+        window.addEventListener('error', (e) => {
+            // Error logging for analytics service
+            // console.error('Error caught:', e.error);
+        });
+
+        // Intersection Observer for better performance
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Add loading states to project cards with staggered animation
+        document.querySelectorAll('.project-card').forEach((card, index) => {
+            card.classList.add('loading');
+            setTimeout(() => {
+                card.classList.remove('loading');
+                card.classList.add('loaded');
+            }, index * 100 + 500); // Staggered loading
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -356,35 +525,25 @@
         });
 
         // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
+        document.querySelectorAll('.fade-in, .comic-panel, .project-card, .award-card').forEach(el => {
             observer.observe(el);
         });
 
-        // Add scroll animations to panels
-        document.querySelectorAll('.comic-panel, .project-card, .award-card').forEach(el => {
-            el.classList.add('fade-in');
-            observer.observe(el);
-        });
-
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
+        // Parallax effect for hero section (optimized)
+        let ticking = false;
+        function updateParallax() {
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero-image');
             if (hero) {
                 hero.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
             }
         });
 
@@ -392,6 +551,7 @@
         let currentSlideIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const dots = document.querySelectorAll('.dot');
+        let slideInterval;
 
         function showSlide(index) {
             // Hide all slides
@@ -399,7 +559,7 @@
             dots.forEach(dot => dot.classList.remove('active'));
             
             // Show current slide
-            if (slides[index]) {
+            if (slides[index] && dots[index]) {
                 slides[index].classList.add('active');
                 dots[index].classList.add('active');
             }
@@ -422,15 +582,325 @@
             showSlide(currentSlideIndex);
         }
 
-        // Auto-slide functionality (optional)
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000); // Change slide every 5 seconds
+        // Auto-slide functionality with proper cleanup
+        function startSlideInterval() {
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+        }
+
+        function stopSlideInterval() {
+            if (slideInterval) {
+                clearInterval(slideInterval);
+            }
+        }
 
         // Initialize slider
         if (slides.length > 0) {
             showSlide(0);
+            startSlideInterval();
         }
+
+        // Theme Toggle Functionality (optimized)
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+        }
+
+        // Theme toggle event listener
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                // Add switching animation
+                themeToggle.classList.add('switching');
+                
+                body.classList.toggle('dark-theme');
+                
+                // Save theme preference
+                const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+                localStorage.setItem('theme', currentTheme);
+                
+                // Add animation effect
+                themeToggle.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    themeToggle.style.transform = '';
+                    themeToggle.classList.remove('switching');
+                }, 300);
+                
+                // Add action bubble
+                const rect = themeToggle.getBoundingClientRect();
+                const x = rect.left + rect.width / 2;
+                const y = rect.top + rect.height / 2;
+                const actionText = body.classList.contains('dark-theme') ? 'GALAXY MODE!' : 'MANGA MODE!';
+                addActionBubble(actionText, x, y);
+            });
+        }
+
+        // Utility Functions
+        function addActionBubble(text, x, y) {
+            const bubble = document.createElement('div');
+            bubble.className = 'manga-action-bubble';
+            bubble.textContent = text;
+            bubble.style.left = x + 'px';
+            bubble.style.top = y + 'px';
+            document.body.appendChild(bubble);
+            
+            setTimeout(() => {
+                bubble.remove();
+            }, 500);
+        }
+
+        function createSparkle(x, y) {
+            for (let i = 0; i < 6; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = (x + (Math.random() - 0.5) * 40) + 'px';
+                sparkle.style.top = (y + (Math.random() - 0.5) * 40) + 'px';
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 1000);
+            }
+        }
+
+        // Floating Objects Interaction (optimized)
+        const floatingObjects = document.querySelectorAll('.floating-object');
+        const objectMessages = {
+            '🛸': ['ALIEN TECH!', 'UFO SPOTTED!', 'BEAM ME UP!'],
+            '✈️': ['TAKING OFF!', 'SKY HIGH!', 'CLEARED FOR TAKEOFF!'],
+            '☄️': ['SHOOTING STAR!', 'COSMIC POWER!', 'WISH GRANTED!'],
+            '🛰️': ['SIGNAL RECEIVED!', 'ORBITAL LINK!', 'SPACE CONNECTION!'],
+            '🚀': ['BLAST OFF!', 'TO THE MOON!', 'SPACE MISSION!'],
+            '🎈': ['UP, UP & AWAY!', 'FLOATING HIGH!', 'PARTY TIME!']
+        };
+
+        // Add click interactions to floating objects
+        floatingObjects.forEach(obj => {
+            obj.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Add clicked animation class
+                obj.classList.add('clicked');
+                setTimeout(() => {
+                    obj.classList.remove('clicked');
+                }, 600);
+                
+                // Create sparkle effect
+                const rect = obj.getBoundingClientRect();
+                const x = rect.left + rect.width / 2;
+                const y = rect.top + rect.height / 2;
+                createSparkle(x, y);
+                
+                // Add action bubble with object-specific messages
+                const objEmoji = obj.textContent.trim();
+                const objMessages = objectMessages[objEmoji] || ['AWESOME!'];
+                const randomMessage = objMessages[Math.floor(Math.random() * objMessages.length)];
+                
+                addActionBubble(randomMessage, x, y);
+            });
+            
+            // Add hover effects
+            obj.addEventListener('mouseenter', () => {
+                obj.style.filter = 'brightness(1.2)';
+            });
+            
+            obj.addEventListener('mouseleave', () => {
+                obj.style.filter = '';
+            });
+        });
+
+        // Random object spawn (optimized with cleanup)
+        let spawnInterval;
+        function spawnRandomObject() {
+            const extraObjects = ['⭐', '🌟', '💫', '🌠', '🪐'];
+            const randomEmoji = extraObjects[Math.floor(Math.random() * extraObjects.length)];
+            
+            const newObj = document.createElement('div');
+            newObj.className = 'floating-object';
+            newObj.textContent = randomEmoji;
+            newObj.style.left = '-50px';
+            newObj.style.top = Math.random() * 70 + 10 + 'vh';
+            newObj.style.animation = 'ufoFloat 8s linear forwards';
+            
+            const floatingContainer = document.querySelector('.floating-objects');
+            if (floatingContainer) {
+                floatingContainer.appendChild(newObj);
+                
+                // Add click interaction to new object
+                newObj.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const rect = newObj.getBoundingClientRect();
+                    const x = rect.left + rect.width / 2;
+                    const y = rect.top + rect.height / 2;
+                    createSparkle(x, y);
+                    addActionBubble('BONUS!', x, y);
+                    newObj.style.animation = 'objectPop 0.6s ease-out';
+                });
+                
+                // Remove after animation
+                setTimeout(() => {
+                    if (newObj.parentNode) {
+                        newObj.remove();
+                    }
+                }, 8000);
+            }
+        }
+
+        // Start spawning random objects
+        spawnInterval = setInterval(spawnRandomObject, 15000);
+
+        // Hero Cards Circular Slider functionality (optimized)
+        let currentHeroCard = 0;
+        const heroCards = document.querySelectorAll('.hero-card');
+        const heroDots = document.querySelectorAll('.hero-dot');
+        const totalHeroCards = heroCards.length;
+        let heroCardsInterval;
+
+        function updateCardPositions(activeIndex) {
+            heroCards.forEach((card, index) => {
+                // Remove all position classes
+                card.classList.remove('active', 'prev', 'next');
+                
+                if (index === activeIndex) {
+                    card.classList.add('active');
+                } else if (index === (activeIndex - 1 + totalHeroCards) % totalHeroCards) {
+                    card.classList.add('prev');
+                } else if (index === (activeIndex + 1) % totalHeroCards) {
+                    card.classList.add('next');
+                }
+            });
+            
+            // Update dots
+            heroDots.forEach(dot => dot.classList.remove('active'));
+            if (heroDots[activeIndex]) {
+                heroDots[activeIndex].classList.add('active');
+            }
+        }
+
+        function nextHeroCard() {
+            currentHeroCard = (currentHeroCard + 1) % totalHeroCards;
+            updateCardPositions(currentHeroCard);
+        }
+
+        function prevHeroCard() {
+            currentHeroCard = (currentHeroCard - 1 + totalHeroCards) % totalHeroCards;
+            updateCardPositions(currentHeroCard);
+        }
+
+        function resetHeroInterval() {
+            if (heroCardsInterval) {
+                clearInterval(heroCardsInterval);
+            }
+            heroCardsInterval = setInterval(nextHeroCard, 4000);
+        }
+
+        // Add click event listeners to dots
+        heroDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentHeroCard = index;
+                updateCardPositions(currentHeroCard);
+                resetHeroInterval();
+                
+                // Add click effect
+                dot.style.transform = 'scale(1.5)';
+                setTimeout(() => {
+                    dot.style.transform = '';
+                }, 200);
+            });
+        });
+
+        // Add click event listeners to cards for direct navigation
+        heroCards.forEach((card, index) => {
+            card.addEventListener('click', (e) => {
+                // Only navigate if it's not the active card
+                if (index !== currentHeroCard) {
+                    currentHeroCard = index;
+                    updateCardPositions(currentHeroCard);
+                    resetHeroInterval();
+                    
+                    // Add click effect
+                    card.style.transform = card.style.transform + ' scale(0.95)';
+                    setTimeout(() => {
+                        updateCardPositions(currentHeroCard);
+                    }, 150);
+                }
+            });
+
+            // Add hover events for better visual feedback
+            card.addEventListener('mouseenter', () => {
+                if (index !== currentHeroCard) {
+                    card.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            });
+        });
+
+        // Pause auto-slide on hover with improved interaction
+        const heroCardsStack = document.querySelector('.hero-cards-stack');
+        if (heroCardsStack) {
+            heroCardsStack.addEventListener('mouseenter', () => {
+                if (heroCardsInterval) {
+                    clearInterval(heroCardsInterval);
+                }
+                // Add subtle glow effect when paused
+                heroCardsStack.style.filter = 'drop-shadow(0 0 15px rgba(255, 68, 68, 0.2))';
+                heroCardsStack.style.transition = 'filter 0.3s ease';
+            });
+
+            heroCardsStack.addEventListener('mouseleave', () => {
+                resetHeroInterval();
+                // Remove glow effect
+                heroCardsStack.style.filter = '';
+            });
+
+            // Add touch support for mobile devices
+            heroCardsStack.addEventListener('touchstart', () => {
+                if (heroCardsInterval) {
+                    clearInterval(heroCardsInterval);
+                }
+            });
+
+            heroCardsStack.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    resetHeroInterval();
+                }, 3000); // Longer delay for touch devices
+            });
+        }
+
+        // Add keyboard navigation for accessibility
+        document.addEventListener('keydown', (e) => {
+            if (heroCardsStack && heroCardsStack.matches(':hover')) {
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevHeroCard();
+                    resetHeroInterval();
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    nextHeroCard();
+                    resetHeroInterval();
+                }
+            }
+        });
+
+        // Initialize hero cards
+        if (heroCards.length > 0) {
+            updateCardPositions(0);
+            resetHeroInterval();
+        }
+
+        // Cleanup intervals on page unload
+        window.addEventListener('beforeunload', () => {
+            if (heroCardsInterval) clearInterval(heroCardsInterval);
+            if (slideInterval) clearInterval(slideInterval);
+            if (spawnInterval) clearInterval(spawnInterval);
+        });
     </script>
 </body>
 </html>
