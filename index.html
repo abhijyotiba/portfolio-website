@@ -74,6 +74,7 @@
             <ul class="nav-links">
                 <li><a href="#about" aria-label="About section">About</a></li>
                 <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+                <li><a href="#technical-skills" aria-label="Technical Skills section">Tech Skills</a></li>
                 <li><a href="#projects" aria-label="Projects section">Projects</a></li>
                 <li><a href="#certifications" aria-label="Certifications section">Certifications</a></li>
                 <li><a href="#blogs" aria-label="Blogs section">Blogs</a></li>
@@ -137,7 +138,7 @@
                 "Passionate AI Engineer with expertise in machine learning, NLP, automation, generative AI and agentic AI workflows. I transform complex data into intelligent solutions that drive innovation and solve real-world challenges!"
             </div>
             <div class="character-image">
-                <img src="asset/profile/abhishek-profile.png" alt="Abhishek Jyotiba - AI Engineer" class="about-character-img">
+                <img src="asset/profile/abcd.jpeg" alt="Abhishek Jyotiba - AI Engineer" class="about-character-img">
             </div>
         </div>
     </section>
@@ -211,26 +212,82 @@
     </section>
 
     <!-- Technical Skills Section -->
-    <section class="comic-section">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-        <div class="project-image">
-            <img src="asset/skills/technical-monitor.png" alt="Technical Skills Monitor" style="height:100%; width:auto;">
+    <section class="comic-section" id="technical-skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="skills-category-title">Programming Languages</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill primary">Python</span>
+                    <span class="skill-pill">NumPy</span>
+                    <span class="skill-pill">Pandas</span>
+                    <span class="skill-pill">Matplotlib</span>
+                    <span class="skill-pill">Scikit-learn</span>
+                    <span class="skill-pill">TensorFlow</span>
+                    <span class="skill-pill">PyTorch</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="skills-category-title">AI & Machine Learning</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill primary">Machine Learning</span>
+                    <span class="skill-pill primary">Deep Learning</span>
+                    <span class="skill-pill">CNNs</span>
+                    <span class="skill-pill">LLMs</span>
+                    <span class="skill-pill">GenAI</span>
+                    <span class="skill-pill">LangChain</span>
+                    <span class="skill-pill">Computer Vision</span>
+                    <span class="skill-pill">NLP</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="skills-category-title">Tools & Platforms</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill">Power BI</span>
+                    <span class="skill-pill">Tableau</span>
+                    <span class="skill-pill">Excel</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">AWS</span>
+                    <span class="skill-pill">Azure</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="skills-category-title">Development Environment</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill">VS Code</span>
+                    <span class="skill-pill">Jupyter</span>
+                    <span class="skill-pill">PyCharm</span>
+                    <span class="skill-pill">Google Colab</span>
+                    <span class="skill-pill">Streamlit</span>
+                    <span class="skill-pill">FastAPI</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="skills-category-title">Databases & APIs</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">PostgreSQL</span>
+                    <span class="skill-pill">MongoDB</span>
+                    <span class="skill-pill">Vector DBs</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="skills-category-title">Soft Skills</h3>
+                <div class="skills-pills">
+                    <span class="skill-pill soft">Leadership</span>
+                    <span class="skill-pill soft">Communication</span>
+                    <span class="skill-pill soft">Critical Thinking</span>
+                    <span class="skill-pill soft">Teamwork</span>
+                    <span class="skill-pill soft">Problem Solving</span>
+                </div>
+            </div>
         </div>
-        <div class="project-content">
-            <h3 class="project-title">Core Proficiencies</h3>
-            <p class="panel-content">
-            <strong>Languages:</strong> Python (NumPy, Pandas, Matplotlib, Scikit-learn)<br>
-            <strong>Tools:</strong> Power BI, Tableau, Excel<br>
-            <strong>IDEs:</strong> VS Code, Jupyter, PyCharm<br>
-            <strong>Databases:</strong> MySQL<br>
-            <strong>Technologies:</strong> Machine Learning, Deep Learning, CNNs, LLMs, GenAI, REST APIs, Git, LangChain<br>
-            <strong>Soft Skills:</strong> Leadership, Communication, Critical Thinking, Teamwork
-            </p>
-        </div>
-        </div>
-    </div>
     </section>
 
         <!-- Projects Section -->
@@ -289,10 +346,10 @@
             </a>
             <a href="https://github.com/abhijyotiba/autonomous-decision-system" target="_blank" class="project-link">
                 <div class="project-card fade-in">
-                    <div class="project-image">AUTONOMOUS SYSTEM</div>
+                    <div class="project-image">AI VOICE ASSISTANT</div>
                     <div class="project-content">
-                        <h3 class="project-title">Autonomous Decision System</h3>
-                        <p class="panel-content">Reinforcement learning agent for automated decision-making in complex environments with real-time adaptation and continuous learning.</p>
+                        <h3 class="project-title">AI VOICE CALLING AGENT</h3>
+                        <p class="panel-content">Automated AI Agent for outbound calling and handling customer service.</p>
                     </div>
                 </div>
             </a>
@@ -894,6 +951,64 @@
             updateCardPositions(0);
             resetHeroInterval();
         }
+
+        // Skills Section Interactive Effects
+        function initializeSkillsInteraction() {
+            const skillPills = document.querySelectorAll('.skill-pill');
+            
+            skillPills.forEach(pill => {
+                // Add click animation and effects
+                pill.addEventListener('click', function() {
+                    // Create sparkle effect
+                    const rect = this.getBoundingClientRect();
+                    const x = rect.left + rect.width / 2;
+                    const y = rect.top + rect.height / 2;
+                    createSparkle(x, y);
+                    
+                    // Add action bubble with skill name
+                    const skillName = this.textContent.trim();
+                    const messages = [
+                        `${skillName} Expert!`,
+                        `Mastering ${skillName}!`,
+                        `${skillName} Pro!`,
+                        `Love ${skillName}!`
+                    ];
+                    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                    addActionBubble(randomMessage, x, y);
+                    
+                    // Add click animation
+                    this.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+
+                // Add hover sound effect simulation
+                pill.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                });
+
+                pill.addEventListener('mouseleave', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+
+            // Staggered fade-in animation for skills categories
+            const skillsCategories = document.querySelectorAll('.skills-category');
+            skillsCategories.forEach((category, index) => {
+                category.style.opacity = '0';
+                category.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    category.style.transition = 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    category.style.opacity = '1';
+                    category.style.transform = 'translateY(0)';
+                }, index * 200 + 300);
+            });
+        }
+
+        // Initialize skills interaction when page loads
+        document.addEventListener('DOMContentLoaded', initializeSkillsInteraction);
 
         // Cleanup intervals on page unload
         window.addEventListener('beforeunload', () => {

@@ -850,7 +850,7 @@
         .hero-card:not(.active):hover {
             z-index: 18 !important;
             opacity: 1 !important;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .hero-card.prev:hover {
@@ -869,7 +869,7 @@
         /* Prevent hover interference when not the target */
         .hero-cards-stack:hover .hero-card:not(:hover) {
             opacity: 1; /* Keep all cards fully visible */
-            transition: all 0.4s ease;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .hero-cards-stack:hover .hero-card.active:not(:hover) {
@@ -882,7 +882,7 @@
             border: 5px solid var(--manga-black);
             overflow: hidden;
             box-shadow: 10px 10px 0 var(--panel-shadow);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             width: 100%;
             height: 100%;
             border-radius: 15px;
@@ -910,7 +910,7 @@
             box-shadow: 
                 15px 15px 0 var(--panel-shadow),
                 0 15px 40px rgba(0, 0, 0, 0.3);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Light theme enhanced hover effects */
@@ -936,7 +936,7 @@
             box-shadow: 
                 12px 12px 0 var(--panel-shadow),
                 0 8px 25px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Light theme enhanced hover effects for rectangles */
@@ -1020,14 +1020,15 @@
             position: absolute;
             top: 0;
             left: 0;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            will-change: transform;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform, opacity;
         }
 
         /* Black and white image (default state) */
         .bw-img {
             z-index: 1;
             transform: translateY(0) scale(1);
+            opacity: 1;
         }
 
         /* Color image (hidden by default, slides up on hover) */
@@ -1035,6 +1036,7 @@
             z-index: 2;
             transform: translateY(100%) scale(1);
             opacity: 0;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Hover effect - slide color image up and fade in */
@@ -1042,6 +1044,7 @@
         .asymmetric-rect:hover .color-img {
             transform: translateY(0) scale(1);
             opacity: 1;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Slight scale and position effect on black and white image when hovering */
@@ -1049,6 +1052,7 @@
         .asymmetric-rect:hover .bw-img {
             transform: translateY(-3%) scale(1.02);
             opacity: 0.3;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Smoother transition for image container */
@@ -1057,7 +1061,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Enhanced hover effects for the rectangles - removed duplicate */
@@ -1088,7 +1092,7 @@
             bottom: 0;
             background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
             opacity: 0;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             z-index: 3;
             pointer-events: none;
         }
@@ -1096,6 +1100,7 @@
         .hero-card:hover .image-container::before,
         .asymmetric-rect:hover .image-container::before {
             opacity: 1;
+            transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* Dark theme hover effects */
@@ -3018,4 +3023,201 @@
         body.dark-theme .collaboration-cta {
             background: rgba(0,0,0,0.3);
             border-color: var(--accent-purple);
+        }
+
+        /* Technical Skills Section Styles */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .skills-category {
+            background: var(--manga-white);
+            border: 3px solid var(--manga-black);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 8px 8px 0px var(--manga-black);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .skills-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 0px var(--manga-black);
+        }
+
+        .skills-category-title {
+            font-family: 'Comic Neue', cursive;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--manga-accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .skills-category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--manga-accent);
+            border-radius: 2px;
+        }
+
+        .skills-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .skill-pill {
+            background: var(--manga-gray-light);
+            color: var(--manga-black);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-family: 'Comic Neue', cursive;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 2px solid var(--manga-black);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-pill::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-pill:hover::before {
+            left: 100%;
+        }
+
+        .skill-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 0px var(--manga-black);
+            background: var(--manga-white);
+        }
+
+        .skill-pill.primary {
+            background: var(--manga-accent);
+            color: var(--manga-white);
+            font-weight: 700;
+            border-color: var(--manga-black);
+        }
+
+        .skill-pill.primary:hover {
+            background: #ff6666;
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        .skill-pill.soft {
+            background: #e8f5e8;
+            color: #2d5016;
+            border-color: #4a7c59;
+        }
+
+        .skill-pill.soft:hover {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        /* Dark theme styles for skills */
+        body.dark-theme .skills-category {
+            background: var(--cosmic-navy);
+            border-color: var(--neon-cyan);
+            box-shadow: 8px 8px 0px var(--neon-cyan);
+        }
+
+        body.dark-theme .skills-category:hover {
+            box-shadow: 12px 12px 0px var(--neon-cyan);
+        }
+
+        body.dark-theme .skills-category-title {
+            color: var(--neon-pink);
+        }
+
+        body.dark-theme .skills-category-title::after {
+            background: var(--neon-pink);
+        }
+
+        body.dark-theme .skill-pill {
+            background: var(--space-gray);
+            color: var(--warm-cream);
+            border-color: var(--neon-cyan);
+        }
+
+        body.dark-theme .skill-pill:hover {
+            background: var(--cosmic-navy);
+            box-shadow: 4px 4px 0px var(--neon-cyan);
+        }
+
+        body.dark-theme .skill-pill.primary {
+            background: var(--neon-pink);
+            color: var(--cosmic-navy);
+            border-color: var(--neon-cyan);
+        }
+
+        body.dark-theme .skill-pill.primary:hover {
+            background: var(--accent-purple);
+            color: var(--warm-cream);
+        }
+
+        body.dark-theme .skill-pill.soft {
+            background: var(--accent-purple);
+            color: var(--warm-cream);
+            border-color: var(--neon-cyan);
+        }
+
+        body.dark-theme .skill-pill.soft:hover {
+            background: var(--neon-pink);
+            color: var(--cosmic-navy);
+        }
+
+        /* Responsive design for skills section */
+        @media (max-width: 768px) {
+            .skills-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 1rem 0.5rem;
+            }
+
+            .skills-category {
+                padding: 1rem;
+            }
+
+            .skills-category-title {
+                font-size: 1.2rem;
+            }
+
+            .skill-pill {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills-pills {
+                gap: 0.6rem;
+            }
+
+            .skill-pill {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+            }
         }
